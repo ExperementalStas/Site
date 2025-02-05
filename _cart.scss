@@ -1,0 +1,318 @@
+.catalog__links {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.cart {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 32px;
+  margin-top: 64px;
+
+  &__content {
+    grid-column: span 8;
+  }
+  &__contentmod {
+    grid-column: span 8;
+    height: 336px;
+    width: 477px;
+  }
+
+  &__modal {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 20px;
+    width: 573px;
+    height: 480px;
+    padding: 40px 48px 40px 48px;
+    gap: 10px;
+  }
+  &__trigger {
+    position: relative;
+    text-decoration: none;
+  }
+  &__trigger:hover &__modal {
+    display: block;
+  }
+
+  &__name-box {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 14px;
+  }
+
+  &__name-title {
+    line-height: 20px;
+    padding-right: 27px;
+  }
+
+  &__quantity {
+    border-radius: 6px;
+    background: rgb(247, 246, 246);
+    width: 71px;
+    height: 51px;
+    color: rgb(0, 0, 0);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid $color-text;
+  }
+
+  &__item1 {
+    border-top: 0.5px solid rgb(202, 205, 216);
+    padding-top: 25px;
+    padding-bottom: 32px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__item1mod {
+    padding-bottom: 21px;
+  }
+
+  &__leftmod {
+    display: flex;
+    gap: 24px;
+  }
+  &__imgmod {
+    height: 144px;
+  }
+  &__infomod {
+    width: 276px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    justify-content: space-between;
+  }
+  &__pricemod {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    padding-bottom: 54px;
+  }
+  &__quantitymod {
+    border-radius: 6px;
+    background: rgb(247, 246, 246);
+    width: 71px;
+    height: 51px;
+    color: rgb(0, 0, 0);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid $color-text;
+    right: 48px;
+  }
+
+  &__item2 {
+    border-top: 0.5px solid rgb(202, 205, 216);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  &__item2mod {
+    border-top: 0.5px solid rgb(202, 205, 216);
+    padding-top: 21px;
+    padding-bottom: 24px;
+  }
+
+  &__pricessmod {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__ordermod {
+    background: rgb(247, 246, 246);
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 207px;
+    height: 40px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    align-self: center;
+  }
+
+  &__left {
+    display: flex;
+    gap: 31px;
+  }
+
+  &__info {
+    width: 276px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  &__title-left {
+    font-size: 24px;
+    font-weight: 500;
+    display: flex;
+  }
+
+  &__text {
+    color: rgb(136, 136, 136);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+  }
+
+  &__price {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+  }
+
+  &__form {
+    grid-column: span 4;
+    background: #f7f6f6;
+    border-radius: 20px;
+    height: 556px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  &__title {
+    padding-top: 42px;
+    padding-bottom: 35px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0;
+    text-align: center;
+  }
+
+  &__input {
+    padding-bottom: 68px;
+    padding-left: 27px;
+    gap: 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__input-text {
+    font-family: Montserrat;
+    width: 288px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0px;
+    border-top: 1px solid rgb(247, 246, 246);
+    border-left: 1px solid rgb(247, 246, 246);
+    border-right: rgb(247, 246, 246);
+    border-bottom: 1px solid rgb(202, 205, 216);
+    background: rgb(247, 246, 246);
+    outline: none;
+  }
+
+  &__pricess {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__prices {
+    font-size: 24px;
+    padding-right: 7px;
+  }
+
+  &__prices-1 {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  &__name::placeholder {
+    border: none;
+  }
+
+  &__order {
+    margin-top: 18px;
+    background: rgb(247, 246, 246);
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 290px;
+    height: 41px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    align-self: center;
+  }
+
+  &__link-box {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: underline;
+  }
+
+  &__link-link {
+    text-decoration-line: underline;
+    color: #000000;
+  }
+
+  &__buttom-box {
+    display: flex;
+    margin-top: 18px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 8px;
+  }
+
+  &__btn {
+    font-family: Montserrat;
+    width: 200px;
+    height: 37px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0px;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: $color-text;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50px;
+  }
+}
+
+.button1 {
+  padding-top: 32px;
+  margin-bottom: 64px;
+}
+
+.buttom__link {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration-line: underline;
+}

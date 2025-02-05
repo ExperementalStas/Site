@@ -1,0 +1,196 @@
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header {
+    padding-top: 32px;
+
+    &__top {
+      border-bottom: none;
+    }
+
+    &__input {
+      display: none;
+    }
+    &__links {
+      display: none;
+    }
+    &__logo {
+      height: 22px;
+    }
+    &__links-mobi {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+    &__title {
+      font-size: 48px;
+      line-height: 58.5px;
+      text-align: center;
+    }
+    &__title-catalog {
+      font-size: 48px;
+      line-height: 58.5px;
+      text-align: center;
+      margin-top: 82px;
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 32px;
+      text-align: center;
+    }
+    &__linkk {
+      font-size: 14px;
+      line-height: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .heading {
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 0;
+  }
+
+  .for-box {
+    padding-left: 16px;
+    padding-right: 16px;
+
+    .for {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+
+      &__item {
+        grid-column: 1 / -1;
+        height: 375px;
+        font-size: 28px;
+        line-height: 34px;
+
+        &_big {
+          height: 244px;
+        }
+      }
+    }
+  }
+
+  .special-offers__img,
+  .product-box__img {
+    width: 345px;
+  }
+  .catalog {
+    margin-bottom: 0px;
+  }
+
+  .filtering-form {
+    width: 0px;
+    width: 286px;
+    min-height: 910px;
+    right: -57px;
+  }
+  .filtering-form__content-wrapper {
+    min-width: 190px;
+    min-height: 830px;
+  }
+
+  .special-offers {
+    margin-top: 32px;
+    gap: 32px;
+
+    &__title {
+      font-size: 24px;
+      line-height: 29px;
+    }
+    &__subtitle {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &__price {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &__cards {
+      gap: 36px;
+    }
+  }
+  .product-box {
+    margin-bottom: 32px;
+
+    &__title {
+      font-size: 24px;
+      line-height: 29px;
+    }
+
+    &__subtitle {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &__price {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &__cards {
+      gap: 36px;
+    }
+  }
+
+  .link-box {
+    margin-top: 36px;
+  }
+
+  .footer {
+    margin-top: 32px;
+    justify-content: center;
+    column-gap: 100px;
+    padding-bottom: 32px;
+
+    &__logo {
+      display: none;
+    }
+
+    &__menu {
+      margin-bottom: 0;
+    }
+    &__form {
+      margin-top: 70px;
+    }
+  }
+
+  .filter {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-wrap: wrap;
+
+    &__links {
+      margin-top: 32px;
+      margin-bottom: 14px;
+    }
+
+    &__ent {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 10px;
+    }
+  }
+
+  .cart {
+    grid-template-columns: repeat(8, 1fr);
+  }
+ .cart__form {
+  width: 343px;
+ }
+ 
+  .cart__img {
+    display: none;
+  }
+  .cart__btn {
+    width: 166px;
+  }
+
+  .link-box2 {
+   padding-top: 32px;
+  }
+}
